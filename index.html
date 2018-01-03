@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="build/css/vendor.css">
+    <link rel="stylesheet" href="build/css/main.css">
+    <script src="build/js/vendor.min.js" charset="utf-8"></script>
+    <script src="build/js/app.js" charset="utf-8"></script>
+    <meta charset="utf-8" name="viewport" content="width=device-width">
+    <title>Hello!</title>
+  </head>
+  <body>
+    <!--left column-->
+    <div class="row">
+      <div class="col-md-4">
+        <div class="header">
+          <h1>Go-Go</h1>
+          <h2>Farm to hand in minutes!!!</h2>
+          <img src="img/vending-machine.jpg" alt="Pizza Vending Machine">
+        </div>
+      </div>
+      <div class="col-md-3">
+      </div>
+      <!--right column-->
+      <div class="col-sm-5">
+        <!--drone page to hide when order starts-->
+        <div class="container">
+          <div id="drone-div">
+            <img src="img/drone.jpg" alt="Drone carrying a pizza">
+            <h3>Pizza Go-Go goes airborne!!!</h3>
+            <p>You heard it right. Pizza GO-GO is now offering delivery nation wide. Place your order on our webpage and we'll have your favorite fire roasted pizza with our freshest local ingredients to your doorstep in just minutes.</p>
+            <button id="place-order-button" type="button" class="btn btn-outline-black btn-lg btn-block head">Place Your Order Here</button>
+          </div>
+          <!--pickup-contact page to hide with contact input-->
+          <div id="contact-div">
+            <h3>Contact Info:</h3>
+            <form id="contact-input">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Enter your first name:" id="first-name">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Enter your last name:" id="last-name">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Street" id="street">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="City" id="city">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="State" id="state">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Zip Code" id="zip">
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" placeholder="Enter your email address:" id="email">
+              </div>
+              <button id="contact-info" type="submit" class="btn btn-outline-black btn-lg btn-block head">Start Creating Pizza Order</button>
+            </form>
+          </div>
+          <!--order page to hide with a pizza order input-->
+          <div id="order-form-div">
+            <p>Pizza Go-Go's automated system will start firing your personal pizza right away. You can either pickup from any location no fee attached or use our Go-Go Airborne delivery option with an additional fee of $5. Choice is yours.</p>
+            <form id="pizza-order">
+              <h3>Pizza Size:</h3>
+              <select class="custom-select form control col" id="pizza-size">
+                <option value="empty"></option>
+                <option value="small">Small 10" - 14</option>
+                <option value="medium">Medium 12" - 16</option>
+                <option value="large">Large 14" - 18</option>
+              </select>
+              <div id="pizza-topping">
+                <h3>Fresh Local Toppings:</h3>
+                <div class="row">
+                  <div class="col-md-6">
+                    <label><input class="topping" type="checkbox" name="toppings" value="4">
+                      Pepperoni - 4
+                    </label></br>
+                    <label><input class="topping" type="checkbox" name="toppings" value="4">
+                      Arugula - 4
+                    </label></br>
+                    <label><input class="topping" type="checkbox" name="toppings" value="4">
+                      Lamb Sausage- 4
+                    </label></br>
+                    <label><input class="topping" type="checkbox" name="toppings" value="4">
+                      Pork Sausage - 4
+                    </label></br>
+                    <label><input class="topping" type="checkbox" name="toppings" value="3">
+                      Calabrian Chilies - 3
+                    </label></br>
+                  </div>
+                  <div class="col-md-6">
+                    <label><input class="topping" type="checkbox" name="toppings" value="5">
+                      Four Farm Eggs - 5
+                    </label></br>
+                    <label><input class="topping" type="checkbox" name="toppings" value="5">
+                      Shiitake Mushrooms - 5
+                    </label></br>
+                    <label><input class="topping" type="checkbox" name="toppings" value="3">
+                      Pickled Jalapeno - 3
+                    </label></br>
+                    <label><input class="topping" type="checkbox" name="toppings" value="3">
+                      Ricotta - 3
+                    </label></br>
+                    <label><input class="topping" type="checkbox" name="toppings" value="3">
+                      Fromage Blanc - 3
+                    </label></br>
+                  </div>
+                </div>
+              </div>
+              <div id="delivery">
+                <h3>Go-Go Airborne Delivery:</h3>
+                <label><input class="topping" type="checkbox" name="toppings" value="5">
+                  Delivery - $5 dollar drone service fee
+                </label></br>
+              </div>
+              <button class="btn btn-lg col" type="submit" name="button" value="save">Get Your Total</button>
+            </form>
+          </div>
+          <div id="final-price-div">
+            <h3>Your Order:</h3>
+            <p id="final-price">
+
+            </p>
+            <div id="show-contact">
+              <ul>
+
+              </ul>
+            </div>
+            <button id="place-order" class="btn btn-lg" type="submit" name="button" value="save">Place Your Pizza Go-Go Order</button>
+            <!-- <button id="restart-order" class="btn btn-lg" type="submit" name="button" value="save">Restart Order</button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
