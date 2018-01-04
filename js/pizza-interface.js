@@ -9,10 +9,10 @@ $(function(){
       inputToppingDelivery.push(parseInt($(this).val()));
     });
 
-    var pizzaOrder = new Pizza(inputSize, inputToppingDelivery,);
+    var pizzaOrder = new Pizza(inputSize, inputToppingDelivery);
 
     var newSizePrice = pizzaOrder.sizePrice();
-    var newToppingDeliveryPrice = pizzaOrder.toppingDeliveryPrice();
+    var newToppingDeliveryPrice = pizzaOrder.pizzaExtraPrice();
     var grandTotal = newSizePrice + newToppingDeliveryPrice;
 
     // $("#order-form-div").slideToggle();

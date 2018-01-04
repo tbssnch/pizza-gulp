@@ -1,10 +1,10 @@
 
 
-function Pizza(size, topping,){
+function Pizza(size, topping){
   this.size = size;
   this.topping = topping;
   this.sizePrice();
-  this.toppingDeliveryPrice();
+  this.pizzaExtraPrice();
 }
 
 Pizza.prototype.sizePrice = function () {
@@ -18,7 +18,7 @@ Pizza.prototype.sizePrice = function () {
     return 18;
 };
 
-Pizza.prototype.toppingDeliveryPrice = function () {
+Pizza.prototype.pizzaExtraPrice = function () {
   var total = 0;
   for (var i = 0; i < this.topping.length; i++) {
     total += this.topping[i] <<0;
